@@ -16,6 +16,5 @@ int main(int argc, char const *argv[])
         cout<<wek+s<<endl;
         cout<<"-------¹þ¹þ-------"<<endl;
     }
-    system("pause");
     return 0;
 }

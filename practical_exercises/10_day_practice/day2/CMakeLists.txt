@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.10)
+project("day 2")
+
+add_executable(recurse_1 递归1.cpp)
+add_executable(recurse_2 递归2.cpp)
+add_executable(hanoi 汉诺塔.cpp)
+add_executable(cpp_structure 结构体.cpp)
+add_executable(static_var 静态变量.cpp)
+add_executable(enum_type 枚举类型.cpp)
+add_executable(cal_pi 求π.cpp)
+add_executable(roll_dice 掷骰子.cpp)
+add_executable(nth_power_x x的n次方.cpp)

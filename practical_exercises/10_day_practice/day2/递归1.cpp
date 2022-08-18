@@ -1,25 +1,25 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int f(int n);
+int arrange(int n);
 int main(int argc, char const *argv[])
-{   
-    cout<<"input x:";
+{
+    cout << "input x:";
     int x;
-    cin>>x;
-    cout<<f(x)<<endl;
-    system("pause");
+    cin >> x;
+    if (x > 13) {
+        cout << "warning: x is too big, result will overflow!!!" << endl;
+    }
+    cout << "arrange(" << x << ")=" << arrange(x) << endl;
     return 0;
 }
 
-int f(int n)
+int arrange(int n)
 {
-    if(n==0)
-    {
+    if (n == 0) {
         return 1;
     }
-    else
-    {
-        return n*f(n-1);
+    else {
+        return n * arrange(n - 1);
     }
 }

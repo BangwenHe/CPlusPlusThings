@@ -6,7 +6,7 @@ int main(int argc, char const *argv[])
 {
     int flag;
     unsigned seed;
-    cout<<"请输入无符号整数："<<endl;
+    cout<<"seed: ";
     cin>>seed;
     srand(seed);
     int sum = rolldice();
@@ -17,9 +17,8 @@ int main(int argc, char const *argv[])
         case 11:
             flag=1;
             break;
-        case 2:
-        case 3:
-        case 12:
+        case 8:
+        case 10:
             flag=2;
             break;
         default:
@@ -48,7 +47,6 @@ int main(int argc, char const *argv[])
         cout<<"player loses\n";
     }
 
-    system("pause");
     return 0;
 }
 

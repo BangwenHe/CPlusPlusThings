@@ -14,7 +14,6 @@ int main(void)
     cout<<" i: "<<i<<" a: "<<a<<" b: "<<b<<" c: "<<c<<endl;//33 0 -10 8 
     i=i+10; other();  //75 6 4 15
     other(); //107 8 6 15
-    system("pause");
     return 0;
 }
 void other(void)
